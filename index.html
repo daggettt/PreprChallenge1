@@ -4,25 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Prepr Web Dev Challenge 1</title>
 </head>
 <body>
   <nav>
     <!--nav needs to stay at the top of the page on scroll-->
-    <left>
+    <nav-left>
       <!--Prepr Labs icon -->
       <!--Hamburger Icon
           *** need click effect here: menu expansion/collapse-->
-    </left>
-    <right>
-      <!--Explore with symbol-->
-      <!--My dashboard with symbol-->
-      <!--Manage with symbol-->
+    </nav-left>
+    <nav-right>
+      <i class="fa-solid fa-binoculars fa-sm"></i>
+      <i class="fa-solid fa-address-card"></i>
+      <i class="fa-solid fa-gear"></i>
       <!--Search bar with input text "Search Challenges, Labs, Projects and People"
           *** need click effect here (just keyboard input)-->
       <!--User Icon with green notification bubble-->
-    </right>
+    </nav-right>
   </nav>
+  <main-container>
+    <h1>Welcome, Learner!</h1>
+    <container>
+      <article>
+        <h2>Recommended Challenges</h2>
+        <p>These Challenges are recommended to you based on your profile.</p>
+      </article>
+      <article>
+        <h2>Recommended Labs</h2>
+        <p>These Labs are recommended to you based on your profile.</p>
+      </article>
+      <article>
+        <h2>Recommended Resources</h2>
+        <p>These Resources are recommended to you based on your profile.</p>
+      </article>
+    </container>
+    <explore-container>
+      <explore-container-left>
+        <p>Explore</p>
+      </explore-container-left>
+      <explore-container-right>
+        <button>Challenges</button>
+        <button>Labs</button>
+        <button>Projects</button>
+      </explore-container-right>
+    </explore-container>
+  </main-container>
   
 </body>
 </html>
