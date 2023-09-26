@@ -6,54 +6,88 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <title>Prepr Web Dev Challenge 1</title>
+  <title>Prepr Web Manager Challenge 1</title>
 </head>
 <body>
-  <nav>
-    <img src="/logoNew.png" alt="PreprLabs" style="width:100px;height:29px;">
-    <!--nav needs to stay at the top of the page on scroll-->
-    <nav-left>
-      <ul>
-        <li><a>Explore</a></li>
-        <li><a>Dashboard</a></li>
-        <li><a>My Challenges</a></li>
-        <li><a>My Labs</a></li>
-        <li><a>My Projects</a></liS>
-      </ul>
-    </nav-left>
-    <nav-right>
-      <i class="fa-solid fa-bell fa-xl"></i>
-      <i class="fa-solid fa-message fa-xl"></i>
-      <i class="fa-solid fa-circle-question fa-xl"></i>
-      <i class="fa-solid fa-moon fa-xl"></i>
-      <div class="search-wrapper">
-        <label for="search">Search</label>
-        <input type="search" id="search" placeholder="Search ...">
-        <input type="submit">
-        <!--add search button for better UX-->
+  
+  <div class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <img src="assets/logoNew.png" style="width: 100px; height: 29px;">
+      <button class="navbar-toggler" data-bs-toggler="collapse"
+        data-bs-target="nav" aria-controls="nav" aria-label="Expand Navigation">
+        <div class="navbar-toggler-icon"></div>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">My Challenges</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">My Labs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">My Projects</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fa-solid fa-bell fa-xl"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fa-solid fa-message fa-xl"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fa-solid fa-circle-question fa-xl"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fa-solid fa-moon fa-xl"></i></a>
+          </li>
+          <li class="nav-item">
+            <form class="form-floating d-flex flex-row">
+              <div class="form-floating">
+                <input type="text" id="search" class="form-control" placeholder="Search..." required>
+                <label for="search">Search</label>
+              </div>
+              <button class="btn btn-outline-primary">Search</button>
+            </form>
+          </li>
+        </ul>
       </div>
-      <!--Search bar with input text "Search Challenges, Labs, Projects and People"
-          *** need click effect here (just keyboard input)-->
-      <!--User Icon -->
-      <!--hambuger menu -->
-    </nav-right>
-  </nav>
+      
+    </div>
+  </div>
+
   <main-container>
-    <h1>Welcome, Learner!</h1>
-    <container>
-      <article>
-        <h2>Recommended Challenges</h2>
-        <p>These Challenges are recommended to you based on your profile.</p>
-      </article>
-      <article>
-        <h2>Recommended Labs</h2>
-        <p>These Labs are recommended to you based on your profile.</p>
-      </article>
-      <article>
-        <h2>Recommended Resources</h2>
-        <p>These Resources are recommended to you based on your profile.</p>
-      </article>
-    </container>
+        <div class="container d-flex justify-content-center">
+          <h1>Welcome, Learner!</h1>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="card-body">
+              <div class="hstack gap-3">
+                <div class="box">
+                  <h2>Recommended Challenges</h2>
+                  <p>These Challenges are recommended to you based on your profile.</p>
+                </div>
+                <div class="box">
+                  <h2>Recommended Labs</h2>
+                  <p>These Labs are recommended to you based on your profile.</p>
+                </div>
+                <div class="box">
+                  <h2>Recommended Resources</h2>
+                  <p>These Resources are recommended to you based on your profile.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
     <explore-container>
       <explore-container-left>
         <p>Explore</p>
@@ -64,12 +98,37 @@
         <button>Projects</button>
       </explore-container-right>
     </explore-container>
-    <div class="project-cards">
-      <div class="profile-sidebar">
-        <img 
+    <div class="card mb-3" >
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="assets/AssessYourselfCover.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Food Processing Skills Canada (FPSC) Career Planning 1: Assess Yourself</h5>
+            <h6 class="card-subtitle">Challenge</h6>
+            <p class="card-text">Your past experience offers the best clues to identify your strengths, skills & work preferences. Think about your favourite project and courses, and the ones you did not enjoy. They tell you a lot about the environment and factors that bring out the best version of you and the less ideal version. You can also learn about your work preference and style by creating your free Plum profile. </p>
+            <button class="btn btn-outline-secondary">View</button>
+          </div>
+        </div>
       </div>
-      <div class="profile-main"></div>
     </div>
+    <div class="card mb-3"">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="assets/TechnicalQAAnalystCover.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Youth Boost - Technical QA Analyst Career Lab</h5>
+            <h6 class="card-subtitle">Lab</h6>
+            <p class="card-text">Technical QA Analyst Career Lab</p>
+            <button class="btn btn-outline-secondary">View</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </main-container>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
 </body>
