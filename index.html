@@ -9,19 +9,32 @@
 </head>
 <body>
   <nav>
+    <img src="/logoNew.png" alt="PreprLabs" style="width:100px;height:29px;">
     <!--nav needs to stay at the top of the page on scroll-->
     <nav-left>
-      <!--Prepr Labs icon -->
-      <!--Hamburger Icon
-          *** need click effect here: menu expansion/collapse-->
+      <ul>
+        <li><a>Explore</a></li>
+        <li><a>Dashboard</a></li>
+        <li><a>My Challenges</a></li>
+        <li><a>My Labs</a></li>
+        <li><a>My Projects</a></liS>
+      </ul>
     </nav-left>
     <nav-right>
-      <i class="fa-solid fa-binoculars fa-sm"></i>
-      <i class="fa-solid fa-address-card"></i>
-      <i class="fa-solid fa-gear"></i>
+      <i class="fa-solid fa-bell fa-xl"></i>
+      <i class="fa-solid fa-message fa-xl"></i>
+      <i class="fa-solid fa-circle-question fa-xl"></i>
+      <i class="fa-solid fa-moon fa-xl"></i>
+      <div class="search-wrapper">
+        <label for="search">Search</label>
+        <input type="search" id="search" placeholder="Search ...">
+        <input type="submit">
+        <!--add search button for better UX-->
+      </div>
       <!--Search bar with input text "Search Challenges, Labs, Projects and People"
           *** need click effect here (just keyboard input)-->
-      <!--User Icon with green notification bubble-->
+      <!--User Icon -->
+      <!--hambuger menu -->
     </nav-right>
   </nav>
   <main-container>
@@ -50,6 +63,12 @@
         <button>Projects</button>
       </explore-container-right>
     </explore-container>
+    <div class="project-cards">
+      <div class="card">
+        <div class="header">Title</div>
+        <div class="body">Description</div>
+      </div>
+    </div>
   </main-container>
   
 </body>
