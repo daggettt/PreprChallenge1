@@ -14,3 +14,7 @@ body {
   flex-direction: column;
   justify-content: center;
 } 
+
+main-container {
+  margin: 5rem;
+}
