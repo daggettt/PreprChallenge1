@@ -10,11 +10,65 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
 } 
+
+.navbar-nav-primary {
+  text-transform: uppercase;
+
+}
+
+.navbar-form-search {
+  position: relative;
+  .form-control {
+    width: 250px;
+  }
+  .btn {
+    border: 0;
+    background: transparent;
+    font-size: 18px;
+    &:active,
+    &:hover,
+    &:focus {
+      color: #000;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  
+  .search-form-container {
+    text-align: right;
+    position: absolute;
+    width: 300px;
+    overflow: hidden;
+    background: #fff;
+    right: 60px;
+    top: 0;
+    z-index: 9;
+    transition: all .3s ease-in-out;
+    &.hdn {
+      width: 0;
+    }
+    
+    .search-input-group {
+      width: 300px;
+    }
+  }
+}
 
 main-container {
   margin: 5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  padding: 1.5rem;
+}
+
+#content-card {
+  margin-botttom: 1rem;
 }

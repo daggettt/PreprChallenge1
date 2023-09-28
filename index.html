@@ -11,24 +11,24 @@
 </head>
 <body>
 
-  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+  <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light border-bottom border-secondary" role="navigation">
+    
     <div class="container-fluid">
-
-      <a class="navbar-brand" href="#">
-          <img src="assets/logoNew.png" alt="Prepr logo" style="width: 100px; height: 29px;">
-      </a>
-
-
       
-      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-          data-target="collapseNavbarid" aria-label="Toggle Navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <a class="navbar-brand" href="#">
+          <img src="assets/logoNew.png" alt="Prepr logo" style="width: 100px; height: 29px; margin: 0 3rem 0 1rem;">
+        </a>
 
-        <div class="collapse navbar-collapse" id="collapseNavbarid">
-            <ul class="navbar-nav mr-auto mt-2 w-50 d-flex justify-content-around">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" 
+        data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+
+            <ul class="navbar-nav nav navbar-nav navbar-right navbar-nav-success" style="gap: 1vw; padding: 0 3vw;">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="#">Explore</a>
@@ -37,24 +37,22 @@
                 <a class="nav-link" href="#">Dashboard</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="#">My Challenges</a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-bell fa-lg"></i></a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="#">My Labs</a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-message fa-lg"></i></a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="#">My Projects</a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-circle-question fa-lg"></i></a>
               </li>
             </ul>
-
-            
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            
-
-            <div class="form-check form-switch ms-auto mt-3 me-3">
+                    
+            <div class="input-group" style="width: 25vw;">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="search-addon" />
+              <button type="button" class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          
+            <div class="form-check form-switch" style="margin: 0 0 0 auto; padding: 1rem;">
               <label class="form-check-label ms-3" for="lightSwitch">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -71,112 +69,141 @@
               </label>
               <input class="form-check-input" type="checkbox" id="lightSwitch" />
             </div>
+
         </div>
+          
+
+        
+
     </div>
-    
   </nav>
 
   <main-container>
         
-    <div class="container d-flex justify-content-center">
+    <div class="welcome-container d-flex justify-content-center">
+
        <h1>Welcome, Learner!</h1>
+
     </div>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col-md-4">
-            <div class="card bg-light text-bg-light h-100">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body ">
-                <h5 class="card-title">Recommended Challenges</h5>
-                <p class="card-text">These Challenges are recommended to you based on your profile.</p>
-                <button class="btn btn-outline-success">View Challenges</button>
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 2rem;">
+            <div class="col-md-4">
+              <div class="card bg-light text-bg-light h-100">
+                <img src="assets/cardcover1.jpg" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title">Recommended Challenges</h5>
+                  <p class="card-text">These Challenges are recommended to you based on your profile.</p>
+                  <button class="btn btn-outline-success">View More Challenges</button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="card bg-light text-bg-light h-100">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Recommended Labs</h5>
-                <p class="card-text">These Labs are recommended to you based on your profile.</p>
-                <button class="btn btn-outline-success">View Labs</button>
+            <div class="col-md-4">
+              <div class="card bg-light text-bg-light h-100">
+                <img src="assets/cardcover2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Recommended Labs</h5>
+                  <p class="card-text">These Labs are recommended to you based on your profile.</p>
+                  <button class="btn btn-outline-success">View More Labs</button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="card bg-light text-bg-light h-100">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Recommended Resources</h5>
-                <p class="card-text">These Resources are recommended to you based on your profile.</p>
-                <button class="btn btn-outline-success">View Resources</button>
+            <div class="col-md-4">
+              <div class="card bg-light text-bg-light h-100">
+                <img src="assets/cardcover4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Recommended Resources</h5>
+                  <p class="card-text">These Resources are recommended to you based on your profile.</p>
+                  <button class="btn btn-outline-success">View More Resources</button>
+                </div>
               </div>
             </div>
-          </div>
         </div>
 
-    <explore-container>
-      <explore-container-left>
-        <p>Explore</p>
-      </explore-container-left>
-      <explore-container-right>
-        <button>Challenges</button>
-        <button>Labs</button>
-        <button>Projects</button>
-      </explore-container-right>
-    </explore-container>
+
+    <div class="body-container d-flex flex-column" style="background-color: #458458; border-radius: 0.5rem; margin: 0; padding: 2rem;">
     
-    <div class="card bg-light text-bg-light mb-3"" >
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="assets/AssessYourselfCover.jpg" class="img-fluid rounded-start" alt="...">
+
+      <div class="explore-container d-flex flex-row justify-content-center align-items-center">
+
+        <div class="container d-flex flex-row justify-content-between align-items-center" style="padding: 0 0 2rem 0;">
+
+           <h2 style="color: white;">Explore</h2>
+
+          <explore-container-right>
+            <button type="button" class="btn btn-light bg-light text-bg-light">Challenges</button>
+            <button type="button" class="btn btn-light bg-light text-bg-light">Labs</button>
+            <button type="button" class="btn btn-light bg-light text-bg-light">Projects</button>
+          </explore-container-right>
+         
         </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Food Processing Skills Canada (FPSC) Career Planning 1: Assess Yourself</h5>
-            <h6 class="card-subtitle">Challenge</h6>
-            <p class="card-text">Your past experience offers the best clues to identify your strengths, skills & work preferences. Think about your favourite project and courses, and the ones you did not enjoy. They tell you a lot about the environment and factors that bring out the best version of you and the less ideal version. You can also learn about your work preference and style by creating your free Plum profile. </p>
-            <button class="btn btn-outline-success">View</button>
+
+      </div>
+      
+    <div class="card-container d-flex flex-column">
+
+        <div class="card bg-light text-bg-light mb-3" id="content-card" >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="assets/AssessYourselfCover.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Food Processing Skills Canada (FPSC) Career Planning 1: Assess Yourself</h5>
+                    <h6 class="card-subtitle">Challenge</h6>
+                    <p class="card-text">Your past experience offers the best clues to identify your strengths, skills & work preferences. Think about your favourite project and courses, and the ones you did not enjoy. They tell you a lot about the environment and factors that bring out the best version of you and the less ideal version. You can also learn about your work preference and style by creating your free Plum profile. </p>
+                    <button class="btn btn-outline-success">View</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="card bg-light text-bg-light mb-3" id="content-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/TechnicalQAAnalystCover.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Youth Boost - Technical QA Analyst Career Lab</h5>
+                <h6 class="card-subtitle">Lab</h6>
+                <p class="card-text">Technical QA Analyst Career Lab</p>
+                <button class="btn btn-outline-success">View</button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+
+        <div class="card bg-light text-bg-light mb-3" id="content-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/Web Manager Challenge 1 Cover Image.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">RebeccaDaggett - Web Manager Challenge 1: User Flow Diagram</h5>
+                <h6 class="card-subtitle">Project</h6>
+                <p class="card-text">A PDF with 5 suggestions to improve the user flow and user experience of PreprLabs.com, including user flow diagrams.</p>
+                <button class="btn btn-outline-success">View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </div>
 
-    <div class="card bg-light text-bg-light mb-3">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="assets/TechnicalQAAnalystCover.jpg" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Youth Boost - Technical QA Analyst Career Lab</h5>
-            <h6 class="card-subtitle">Lab</h6>
-            <p class="card-text">Technical QA Analyst Career Lab</p>
-            <button class="btn btn-outline-success">View</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card bg-light text-bg-light mb-3">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="assets/Web Manager Challenge 1 Cover Image.png" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">RebeccaDaggett - Web Manager Challenge 1: User Flow Diagram</h5>
-            <h6 class="card-subtitle">Project</h6>
-            <p class="card-text">A PDF with 5 suggestions to improve the user flow and user experience of PreprLabs.com, including user flow diagrams.</p>
-            <button class="btn btn-outline-success">View</button>
-          </div>
-        </div>
-      </div>
-    </div>
     
-  </main-container>
+    
+  </main-container></div>
+
+  <footer class="footer mt-auto py-3 bg-light ">
+    <div class="container-fluid d-flex justify-content-around">
+      <p class="text">v23.1.2</p>
+      <p class="text">Powered by <b>LearnLab.ai</b></p>
+      
+    </div>
+  </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
   
