@@ -11,23 +11,19 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 8vw;
 } 
-
-.navbar-nav-primary {
-  text-transform: uppercase;
-
-}
 
 .navbar-form-search {
   position: relative;
   .form-control {
-    width: 250px;
+    width: 15.625rem;
   }
+
   .btn {
     border: 0;
     background: transparent;
-    font-size: 18px;
+    font-size: 1.125rem;
     &:active,
     &:hover,
     &:focus {
@@ -40,10 +36,10 @@ body {
   .search-form-container {
     text-align: right;
     position: absolute;
-    width: 300px;
+    width: 18.75rem;
     overflow: hidden;
     background: #fff;
-    right: 60px;
+    right: 3.75rem;
     top: 0;
     z-index: 9;
     transition: all .3s ease-in-out;
@@ -52,14 +48,12 @@ body {
     }
     
     .search-input-group {
-      width: 300px;
+      width: 18.75rem;
     }
   }
 }
 
 main-container {
-  margin: 5rem;
-  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,3 +66,42 @@ h1 {
 #content-card {
   margin-botttom: 1rem;
 }
+
+.col-md-8 > .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+h6.card-subtitle {
+  color: #458458
+}
+
+
+.fab-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  user-select: none;
+  position: absolute;
+  bottom: 30px; right: 30px;
+  
+  }
+
+.fab {
+    position: relative;
+    height: 70px; width: 70px;
+    border-radius: 50%;
+    
+   
+    .fab-content {
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+      height: 100%; width: 100%;
+      border-radius: 50%;
+      color: #458458
+    }
+  }
+ 

@@ -11,12 +11,12 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light border-bottom border-secondary" role="navigation">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light border-bottom border-success-subtle shadow-sm" role="navigation">
     
     <div class="container-fluid">
       
         <a class="navbar-brand" href="#">
-          <img src="assets/logoNew.png" alt="Prepr logo" style="width: 100px; height: 29px; margin: 0 3rem 0 1rem;">
+          <img src="assets/logoNew.png" alt="Prepr logo" style="width: 6.25rem; height: 1.8125rem; margin: 0 3rem 0 1rem;">
         </a>
 
         <button class="navbar-toggler" data-bs-toggle="collapse" 
@@ -24,9 +24,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="nav">
+        <div class="collapse navbar-collapse justify-content-end"id="nav" >
 
-            <ul class="navbar-nav nav navbar-nav navbar-right navbar-nav-success" style="gap: 1vw; padding: 0 3vw;">
+            <ul class="navbar-nav nav navbar-nav navbar-right navbar-nav-success" style="gap: 1vw; ">
               <li class="nav-item">
                 <a class="nav-link active" href="#">Home</a>
               </li>
@@ -45,14 +45,9 @@
               <li class="nav-item ">
                 <a class="nav-link" href="#"><i class="fa-solid fa-circle-question fa-lg"></i></a>
               </li>
-            </ul>
-                    
-            <div class="input-group" style="width: 25vw;">
-              <input type="search" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="search-addon" />
-              <button type="button" class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-          
-            <div class="form-check form-switch" style="margin: 0 0 0 auto; padding: 1rem;">
+
+              <li class="d-flex flex-row align-items-center" style="padding: 0 3vw;">
+                <div class="form-check form-switch">
               <label class="form-check-label ms-3" for="lightSwitch">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -68,12 +63,19 @@
                 </svg>
               </label>
               <input class="form-check-input" type="checkbox" id="lightSwitch" />
-            </div>
+                </div> 
+              </li>
 
-        </div>
+            </ul>
+
+            <div class="input-group" style="width: 25vw;">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="search-addon" />
+              <button type="button" class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
           
 
-        
+
+        </div>
 
     </div>
   </nav>
@@ -122,28 +124,27 @@
         </div>
 
 
-    <div class="body-container d-flex flex-column" style="background-color: #458458; border-radius: 0.5rem; margin: 0; padding: 2rem;">
+    <div class="body-container d-flex flex-column" style="background-color: #458458; border-radius: 0.5rem; padding: 2rem;">
     
-
       <div class="explore-container d-flex flex-row justify-content-center align-items-center">
 
         <div class="container d-flex flex-row justify-content-between align-items-center" style="padding: 0 0 2rem 0;">
 
            <h2 style="color: white;">Explore</h2>
 
-          <explore-container-right>
-            <button type="button" class="btn btn-light bg-light text-bg-light">Challenges</button>
-            <button type="button" class="btn btn-light bg-light text-bg-light">Labs</button>
-            <button type="button" class="btn btn-light bg-light text-bg-light">Projects</button>
-          </explore-container-right>
+          <div class="container">
+            <button type="button" class="btn btn-light bg-light text-bg-light" onclick="filter('Challenge')">Challenges</button>
+            <button type="button" class="btn btn-light bg-light text-bg-light" onclick="filter('Lab')">Labs</button>
+            <button type="button" class="btn btn-light bg-light text-bg-light" onclick="filter('Project')">Projects</button>
+          </div>
          
         </div>
 
       </div>
       
-    <div class="card-container d-flex flex-column">
+    <div class="card-container d-flex flex-column ">
 
-        <div class="card bg-light text-bg-light mb-3" id="content-card" >
+        <div class="card content-card bg-light text-bg-light mb-3" id="content-card" >
               <div class="row g-0">
                 <div class="col-md-4">
                   <img src="assets/AssessYourselfCover.jpg" class="img-fluid rounded-start" alt="...">
@@ -151,25 +152,27 @@
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title">Food Processing Skills Canada (FPSC) Career Planning 1: Assess Yourself</h5>
-                    <h6 class="card-subtitle">Challenge</h6>
-                    <p class="card-text">Your past experience offers the best clues to identify your strengths, skills & work preferences. Think about your favourite project and courses, and the ones you did not enjoy. They tell you a lot about the environment and factors that bring out the best version of you and the less ideal version. You can also learn about your work preference and style by creating your free Plum profile. </p>
-                    <button class="btn btn-outline-success">View</button>
+                    <h6 class="card-subtitle" id="challenge" style="color: #458458;">Challenge</h6>
+                    <p class="card-text">Your past experience offers the best clues to identify your strengths, skills & work preferences. 
+                      Think about your favourite project and courses, and the ones you did not enjoy. 
+                      They tell you a lot about the environment and factors that bring out the best version of you and the less ideal version. </p>
+                    <button class="btn btn-outline-success">View More</button>
                   </div>
                 </div>
               </div>
         </div>
 
         <div class="card bg-light text-bg-light mb-3" id="content-card">
-          <div class="row g-0">
+          <div class="row g-0 ">
             <div class="col-md-4">
               <img src="assets/TechnicalQAAnalystCover.jpg" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Youth Boost - Technical QA Analyst Career Lab</h5>
-                <h6 class="card-subtitle">Lab</h6>
+                <h6 class="card-subtitle" id="lab">Lab</h6>
                 <p class="card-text">Technical QA Analyst Career Lab</p>
-                <button class="btn btn-outline-success">View</button>
+                <button class="btn btn-outline-success">View More</button>
               </div>
             </div>
           </div>
@@ -183,9 +186,9 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">RebeccaDaggett - Web Manager Challenge 1: User Flow Diagram</h5>
-                <h6 class="card-subtitle">Project</h6>
+                <h6 class="card-subtitle" id="project">Project</h6>
                 <p class="card-text">A PDF with 5 suggestions to improve the user flow and user experience of PreprLabs.com, including user flow diagrams.</p>
-                <button class="btn btn-outline-success">View</button>
+                <button class="btn btn-outline-success">View More</button>
               </div>
             </div>
           </div>
@@ -196,6 +199,14 @@
     
     
   </main-container></div>
+
+  <div class="fab-container">
+        <div class="fab shadow">
+          <div class="fab-content">
+            <i class="fa-regular fa-comments fa-lg"></i>
+          </div>
+        </div>
+      </div>
 
   <footer class="footer mt-auto py-3 bg-light ">
     <div class="container-fluid d-flex justify-content-around">
