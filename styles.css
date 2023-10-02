@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0;
-  padding: 8vw;
+  padding: 4vw 8vw;
 } 
 
 .navbar-form-search {
@@ -53,48 +53,25 @@ body {
   }
 }
 
-main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 h1 {
-  padding: 1.5rem;
+  padding: 1rem;
 }
-
-#content-card {
-  margin-botttom: 1rem;
-}
-
-.col-md-8 > .card-body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-h6.card-subtitle {
-  color: #458458
-}
-
 
 .fab-container {
   display: flex;
-  flex-direction: column;
+  width: 90vw;
   justify-content: flex-end;
-  align-items: center;
   user-select: none;
-  position: absolute;
-  bottom: 30px; right: 30px;
-  
+  position: sticky;
+  bottom: 1.5rem; right: 1.5rem;
   }
 
 .fab {
     position: relative;
     height: 70px; width: 70px;
     border-radius: 50%;
+    background-color: white;
     
-   
     .fab-content {
       display: flex;
       align-items: center; 
@@ -103,5 +80,45 @@ h6.card-subtitle {
       border-radius: 50%;
       color: #458458
     }
-  }
- 
+}
+
+.filterDiv {
+    float: left;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+}
+
+.title {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.description {
+    padding: 1rem;
+    background: white;
+    
+}
+
+.description p {
+    margin: 0.3125rem 0;
+}
+
+h6.card-subtitle {
+  color: #458458
+}
