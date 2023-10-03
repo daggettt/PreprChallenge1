@@ -1,5 +1,5 @@
-# PreprChallenge1
-Prepr Frontend Developer Challenge 1: Web Page Creation
+# PreprChallenge
+Prepr Web Manager Challenge 2: Web Page Creation
 //
 //
 Project Overview:
