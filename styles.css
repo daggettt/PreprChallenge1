@@ -11,7 +11,9 @@ html {
 
 body {
   margin: 0;
-  padding: 4vw 8vw;
+  padding: 6vw 8vw 0 8vw;
+  display: flex;
+  flex-direction: column;
 } 
 
 .navbar-form-search {
@@ -82,13 +84,13 @@ h1 {
     }
 }
 
-.filterDiv {
-    float: left;
+.filterDiv { 
     display: none;
 }
 
 .show {
-    display: block;
+    display:flex;
+    width: 100;
 }
 
 .card {
@@ -122,3 +124,16 @@ h1 {
 h6.card-subtitle {
   color: #458458
 }
+
+footer {
+  margin-top: auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
